@@ -514,35 +514,27 @@
 						<div class="row align-items-center pt-5 pb-xl-5 mt-5">
 							<div class="col-md-7 col-lg-8 py-4 my-2 ms-md-3 ms-lg-0">
 								<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">GET IN TOUCH</h2>
-								<h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Send Us a Message and Learn More About Our Services</h3>
-								<p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet. </p>
+								<h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Στείλτε μας μήνυμα για να ενημερωθείτε για τις υπηρεσίες μας</h3>
 								<form class="contact-form form-style-4 form-placeholders-light form-errors-light appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" action="php/contact-form.php" method="POST">
-									<div class="contact-form-success alert alert-success d-none mt-4">
-										<strong>Success!</strong> Your message has been sent to us.
-									</div>
-									<div class="contact-form-error alert alert-danger d-none mt-4">
-										<strong>Error!</strong> There was an error sending your message.
-										<span class="mail-error-message text-1 d-block"></span>
-									</div>
 									<div class="row">
 										<div class="form-group col">
-											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="name" placeholder="* Full Name" required>
+											<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="name" placeholder="* Ονοματεπώνυμο" required>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group col">
-											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="email" placeholder="* Email Address" required>
+											<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="email" placeholder="* Διεύθυνση ηλεκτρονικού ταχυδρομείου" required>
 										</div>
 									</div>
 									<div class="row mb-4">
 										<div class="form-group col">
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="message" placeholder="* Message" required></textarea>
+											<textarea maxlength="5000" rows="8" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="message" placeholder="* Μήνυμα" required></textarea>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
 											<button type="submit" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-loading-text="Loading..." data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
-												<span>Send Message</span>
+												<span>Αποστολή</span>
 											</button>
 										</div>
 									</div>
@@ -556,7 +548,7 @@
 						<div class="row">
 							<div class="col text-center">
 								<h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">TESTIMONIALS</h2>
-								<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold text-color-dark pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">What People Say</h3>
+								<h3 class="text-9 line-height-3 text-transform-none font-weight-semibold text-color-dark pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Τι είπαν για εμάς</h3>
 							</div>
 						</div>
 						<div class="row justify-content-center">
@@ -631,7 +623,6 @@
 							</ul>
 						</div>
 						<div class="col-lg-4 mb-4 mb-lg-0">
-							<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
 							<div id="googlemaps" class="google-map m-0" style="height: 190px;"></div>
 						</div>
                         	<div class="col-lg-2">
@@ -712,7 +703,7 @@
 				var mapMarkers = [{
 					latitude: initLatitude,
 					longitude: initLongitude,
-					html: "<strong>Plefsis Kavala | Boats and More</strong><br>Δυτικός Μώλος Λιμένα Καβάλας, Ν.Ο.Κ.<br><br><a href='#' onclick='mapCenterAt({latitude: 40.934075, longitude: 24.406454, zoom: 16}, event)'>[+] zoom here</a>",
+					html: "<strong>Plefsis Kavala | Boats and More</strong><br>Δυτικός Μώλος Λιμένα Καβάλας, Ν.Ο.Κ.<br><br><a href='#' onclick='mapCenterAt({latitude: 40.934075, longitude: 24.406454, zoom: 16}, event)'>[+]</a>",
 					icon: {
 						image: "img/demos/business-consulting-3/map-pin.png",
 						iconsize: [26, 27],
