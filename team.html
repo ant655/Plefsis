@@ -368,9 +368,33 @@
 							<h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0">PlefsisKavala | Boats and more</h2>
 						</div>
 						<div class="col-auto">
-							<a href="index.html#contact" class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
-								<span class="text-color-light">Contact Us</span>
+							<a class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"  onclick="popupToggle();">
+								<span class="text-color-light">Nesletter</span>
 							</a>
+                                  <div class="center" id="popup">
+                              <i class="fa fa-times" onclick="popupToggle();" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"></i>
+                              <i class="fa-solid fa-envelope icon1"></i>
+                              <h2>Join our newsletter</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fuga voluptates!</p>
+                              <form action="">
+                                <i class="fa-solid fa-envelope icon2"></i>
+                                <input type="email" placeholder="abc123@example.com">
+                                <a class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light" onclick="popupToggle();">
+								<span class="text-color-light">Subscribe</span>
+							</a>
+                               </form>
+                            	<ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">
+												<li class="social-icons-instagram">
+													<a href="http://www.instagram.com/" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit" rel="noopener"><i class="fab fa-instagram"></i></a>
+												</li>
+												<li class="social-icons-youtube">
+													<a href="http://www.youtube.com/" target="_blank" class="text-4" title="Youtube" data-cursor-effect-hover="fit" rel="noopener"><i class="fab fa-youtube"></i></a>
+												</li>
+												<li class="social-icons-facebook">
+													<a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+												</li>
+											</ul>
+                            </div>
 						</div>
 					</div>
 					<hr class="bg-color-light opacity-1 my-0">
@@ -439,6 +463,13 @@
 					</div>
 				</div>
 			</footer>
+                <script>
+        
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
         <!--<script>window.history.replaceState( {} , 'team.html', '/team' );</script>-->
         <script>  $('html,body').animate({scrollTop: $(window.location.hash).offset().top});</script>
 		<!-- Vendor -->
